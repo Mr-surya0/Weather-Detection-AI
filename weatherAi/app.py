@@ -8,9 +8,9 @@ app = Flask(__name__)
 CORS(app)
 
 # Replace with your OpenWeatherMap API key
-API_KEY = 'e981d0821ac0edfba78a418e530ea38a'
-BASE_URL = 'http://api.openweathermap.org/data/2.5/weather'
-FORECAST_URL = 'http://api.openweathermap.org/data/2.5/forecast'
+API_KEY = 'your_api_key'
+BASE_URL = ''
+FORECAST_URL = ''
 
 def get_weather_data(city, api_key, forecast=False):
     url = FORECAST_URL if forecast else BASE_URL
